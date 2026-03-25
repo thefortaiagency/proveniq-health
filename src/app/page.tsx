@@ -60,53 +60,57 @@ export default function Home() {
       </nav>
 
       <main className="flex-1">
-        {/* Hero */}
-        <section className="pt-32 pb-20 px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-gold-500 font-semibold text-sm uppercase tracking-wider mb-4">
-              Coming Soon
-            </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
-              Clinical Intelligence Built on{" "}
-              <span className="text-teal-500">Real Outcomes</span>
-            </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-              ProvenIQ transforms your EHR data into evidence-based treatment
-              recommendations — ranked by what actually works for patients like
-              yours.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
-              <a
-                href="#waitlist"
-                className="bg-teal-500 text-white px-8 py-3.5 rounded-lg text-base font-semibold hover:bg-teal-600 transition-colors"
-              >
-                Request Early Access
-              </a>
-              <a
-                href="#how-it-works"
-                className="border-2 border-slate-300 text-slate-700 px-8 py-3.5 rounded-lg text-base font-semibold hover:border-teal-500 hover:text-teal-600 transition-colors"
-              >
-                See How It Works
-              </a>
-            </div>
+        {/* Hero — text overlaid on DALL-E image */}
+        <section className="relative pt-24 min-h-[90vh] flex flex-col">
+          {/* Background image */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/images/hero-visual.png"
+              alt="Clinical intelligence — data-driven treatment insights powered by real patient outcomes"
+              fill
+              className="object-cover object-top"
+              priority
+            />
+            {/* Overlay gradient so text is readable */}
+            <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/75 to-white/95" />
           </div>
 
-          {/* Hero Visual */}
-          <div className="max-w-5xl mx-auto px-6 mb-10">
-            <div className="rounded-2xl overflow-hidden">
-              <Image
-                src="/images/hero-visual.png"
-                alt="Clinical intelligence — data-driven treatment insights powered by real patient outcomes"
-                width={1792}
-                height={1024}
-                className="w-full h-auto"
-                priority
-              />
+          {/* Text content on top */}
+          <div className="relative z-10 flex-1 flex flex-col justify-center px-6 py-20">
+            <div className="max-w-4xl mx-auto text-center">
+              <p className="text-gold-500 font-semibold text-sm uppercase tracking-wider mb-4">
+                Coming Soon
+              </p>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
+                Clinical Intelligence Built on{" "}
+                <span className="text-teal-500">Real Outcomes</span>
+              </h1>
+              <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+                ProvenIQ transforms your EHR data into evidence-based treatment
+                recommendations — ranked by what actually works for patients like
+                yours.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="#waitlist"
+                  className="bg-teal-500 text-white px-8 py-3.5 rounded-lg text-base font-semibold hover:bg-teal-600 transition-colors"
+                >
+                  Request Early Access
+                </a>
+                <a
+                  href="#how-it-works"
+                  className="border-2 border-slate-300 text-slate-700 px-8 py-3.5 rounded-lg text-base font-semibold hover:border-teal-500 hover:text-teal-600 transition-colors bg-white/50 backdrop-blur-sm"
+                >
+                  See How It Works
+                </a>
+              </div>
             </div>
           </div>
+        </section>
 
-          {/* Dashboard Mockup */}
-          <div className="max-w-6xl mx-auto px-6">
+        {/* Dashboard Mockup */}
+        <section className="py-16 px-6 bg-white">
+          <div className="max-w-6xl mx-auto">
             <div className="rounded-xl overflow-hidden shadow-2xl border border-slate-200">
               <Image
                 src="/images/hero-dashboard.png"
