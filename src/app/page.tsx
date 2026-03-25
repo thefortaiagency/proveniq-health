@@ -45,9 +45,9 @@ export default function Home() {
           <Image
             src="/images/proveniq-wordmark.png"
             alt="ProvenIQ"
-            width={140}
-            height={40}
-            className="h-8 w-auto"
+            width={180}
+            height={32}
+            className="h-10 w-auto"
             priority
           />
           <a
@@ -421,9 +421,9 @@ export default function Home() {
               <Image
                 src="/images/proveniq-logo-stacked.png"
                 alt="ProvenIQ — Outcomes that speak for themselves"
-                width={200}
-                height={200}
-                className="mx-auto mb-8 w-40 h-auto"
+                width={300}
+                height={283}
+                className="mx-auto mb-8 w-56 h-auto"
               />
               <h2 className="text-3xl font-bold text-slate-900 mb-4">
                 Get early access
@@ -570,9 +570,9 @@ export default function Home() {
             <Image
               src="/images/proveniq-wordmark.png"
               alt="ProvenIQ"
-              width={120}
-              height={34}
-              className="h-6 w-auto brightness-200"
+              width={160}
+              height={28}
+              className="h-8 w-auto brightness-200"
             />
           </div>
           <p className="text-sm">
