@@ -572,7 +572,7 @@ export default function Home() {
               alt="ProvenIQ"
               width={160}
               height={28}
-              className="h-8 w-auto brightness-200"
+              className="h-8 w-auto"
             />
           </div>
           <p className="text-sm">
