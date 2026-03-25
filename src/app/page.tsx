@@ -75,7 +75,7 @@ export default function Home() {
               recommendations — ranked by what actually works for patients like
               yours.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
               <a
                 href="#waitlist"
                 className="bg-teal-500 text-white px-8 py-3.5 rounded-lg text-base font-semibold hover:bg-teal-600 transition-colors"
@@ -88,6 +88,20 @@ export default function Home() {
               >
                 See How It Works
               </a>
+            </div>
+          </div>
+
+          {/* Hero Dashboard Image */}
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="rounded-xl overflow-hidden shadow-2xl border border-slate-200">
+              <Image
+                src="/images/hero-dashboard.png"
+                alt="ProvenIQ Clinical Intelligence Dashboard — Treatment recommendations, lab trends, safety monitoring, and patient chart summaries"
+                width={1200}
+                height={700}
+                className="w-full h-auto"
+                priority
+              />
             </div>
           </div>
         </section>
