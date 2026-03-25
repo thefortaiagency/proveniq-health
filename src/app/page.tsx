@@ -392,9 +392,9 @@ export default function Home() {
                   Connect Your EHR
                 </h3>
                 <p className="text-slate-600">
-                  ProvenIQ connects to your electronic health record system via
-                  read-only API. Your data stays in your system — we analyze it
-                  in place.
+                  ProvenIQ connects to your EHR via read-only API. PHI stays in
+                  your system — we pull de-identified clinical data to build
+                  your outcomes intelligence.
                 </p>
               </div>
 

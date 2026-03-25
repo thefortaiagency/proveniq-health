@@ -130,7 +130,7 @@ export async function sendWaitlistConfirmation(data: WaitlistSignup) {
       <td style="padding:0 32px;">
         <h2 style="margin:0 0 16px;font-size:20px;color:#1e293b;font-weight:600;">You're on the list, ${firstName}.</h2>
         <p style="margin:0 0 16px;font-size:15px;color:#475569;line-height:1.6;">
-          Thank you for your interest in ProvenIQ. We're building clinical intelligence that turns your EHR data into evidence-based treatment recommendations — ranked by what actually works for patients like yours.
+          Thank you for your interest in ProvenIQ. We pull de-identified clinical data from your EHR — keeping PHI in your system — and turn it into evidence-based treatment recommendations ranked by real outcomes from patients like yours.
         </p>
         <p style="margin:0 0 24px;font-size:15px;color:#475569;line-height:1.6;">
           We're onboarding a limited number of practices for our initial launch, and you've secured your spot in line.
@@ -210,7 +210,7 @@ export async function sendWaitlistConfirmation(data: WaitlistSignup) {
       to: data.email,
       subject: `You're on the list, ${firstName} — ProvenIQ Health`,
       html: htmlContent,
-      text: `You're on the list, ${firstName}.\n\nThank you for your interest in ProvenIQ. We're building clinical intelligence that turns your EHR data into evidence-based treatment recommendations — ranked by what actually works for patients like yours.\n\nWe're onboarding a limited number of practices for our initial launch, and you've secured your spot in line.\n\nWhat happens next:\n1. We'll reach out to schedule a brief intro call\n2. We'll review your EHR setup and data compatibility\n3. You'll get a personalized demo with your practice's data\n\nLearn more: https://proveniq.health/#how-it-works\n\n—\nProvenIQ Health\nA product of The Fort AI Agency & AImpact Nexus`,
+      text: `You're on the list, ${firstName}.\n\nThank you for your interest in ProvenIQ. We pull de-identified clinical data from your EHR — keeping PHI in your system — and turn it into evidence-based treatment recommendations ranked by real outcomes from patients like yours.\n\nWe're onboarding a limited number of practices for our initial launch, and you've secured your spot in line.\n\nWhat happens next:\n1. We'll reach out to schedule a brief intro call\n2. We'll review your EHR setup and data compatibility\n3. You'll get a personalized demo with your practice's data\n\nLearn more: https://proveniq.health/#how-it-works\n\n—\nProvenIQ Health\nA product of The Fort AI Agency & AImpact Nexus`,
     });
 
     if (result.error) {
