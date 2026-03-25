@@ -78,7 +78,7 @@ export async function sendWaitlistNotification(data: WaitlistSignup) {
 
   try {
     const result = await getResend().emails.send({
-      from: "ProvenIQ <noreply@thefortaiagency.ai>",
+      from: "ProvenIQ <proveniq@thefortaiagency.ai>",
       to: "aoberlin@thefortaiagency.ai",
       subject: `ProvenIQ Waitlist: ${data.name}${data.practice ? ` — ${data.practice}` : ""}`,
       html: htmlContent,
