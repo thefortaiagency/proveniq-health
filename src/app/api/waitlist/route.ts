@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sendWaitlistNotification } from "@/lib/email";
+import { sendWaitlistNotification, sendWaitlistConfirmation } from "@/lib/email";
 
 export async function POST(req: NextRequest) {
   try {
@@ -22,7 +22,19 @@ export async function POST(req: NextRequest) {
     });
 
     if (!sent) {
-      console.error("Waitlist signup (email failed):", { name, email, practice, role });
+      console.error("Waitlist signup (notification failed):", { name, email, practice, role });
+    }
+
+    // Send confirmation email to the person who signed up
+    const confirmed = await sendWaitlistConfirmation({
+      name,
+      email,
+      practice: practice || "",
+      role: role || "",
+    });
+
+    if (!confirmed) {
+      console.error("Waitlist confirmation email failed:", { email });
     }
 
     console.log("Waitlist signup:", { name, email, practice, role, timestamp: new Date().toISOString() });
