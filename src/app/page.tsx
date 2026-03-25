@@ -91,16 +91,29 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Photo */}
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
+          {/* Hero Visual */}
+          <div className="max-w-5xl mx-auto px-6 mb-10">
+            <div className="rounded-2xl overflow-hidden">
               <Image
-                src="/images/hero-photo.png"
-                alt="Healthcare provider using ProvenIQ clinical intelligence platform to review patient treatment analytics"
+                src="/images/hero-visual.png"
+                alt="Clinical intelligence — data-driven treatment insights powered by real patient outcomes"
                 width={1792}
                 height={1024}
                 className="w-full h-auto"
                 priority
+              />
+            </div>
+          </div>
+
+          {/* Dashboard Mockup */}
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="rounded-xl overflow-hidden shadow-2xl border border-slate-200">
+              <Image
+                src="/images/hero-dashboard.png"
+                alt="ProvenIQ Clinical Intelligence Dashboard — Treatment recommendations, lab trends, safety monitoring, and patient chart summaries"
+                width={1200}
+                height={700}
+                className="w-full h-auto"
               />
             </div>
           </div>
