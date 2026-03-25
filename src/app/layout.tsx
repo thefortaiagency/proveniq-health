@@ -37,12 +37,21 @@ export const metadata: Metadata = {
     url: "https://proveniq.health",
     siteName: "ProvenIQ Health",
     type: "website",
+    images: [
+      {
+        url: "https://proveniq.health/images/hero-dashboard.png",
+        width: 1200,
+        height: 700,
+        alt: "ProvenIQ Clinical Intelligence Dashboard",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ProvenIQ Health — Outcomes That Speak for Themselves",
     description:
       "Clinical intelligence built on 201K+ real treatment outcomes.",
+    images: ["https://proveniq.health/images/hero-dashboard.png"],
   },
 };
 
