@@ -581,7 +581,9 @@ export default function Home() {
           </p>
           <p className="text-sm">
             A product of{" "}
-            <span className="text-slate-300">The Fort AI Agency</span>
+            <a href="https://thefortaiagency.com" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-white transition-colors">The Fort AI Agency</a>
+            {" "}&amp;{" "}
+            <a href="https://aimpactnexus.ai" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-white transition-colors">AImpact Nexus</a>
           </p>
         </div>
       </footer>
