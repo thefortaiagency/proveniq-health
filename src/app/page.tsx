@@ -41,13 +41,13 @@ export default function Home() {
     <>
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <Image
             src="/images/proveniq-wordmark.png"
             alt="ProvenIQ"
-            width={180}
-            height={32}
-            className="h-10 w-auto"
+            width={240}
+            height={43}
+            className="h-10 sm:h-12 w-auto"
             priority
           />
           <a
@@ -61,7 +61,7 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="pt-32 pb-20 px-6">
+        <section className="pt-36 pb-20 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-gold-500 font-semibold text-sm uppercase tracking-wider mb-4">
               Coming Soon
