@@ -91,14 +91,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Dashboard Image */}
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="rounded-xl overflow-hidden shadow-2xl border border-slate-200">
+          {/* Hero Photo */}
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/hero-dashboard.png"
-                alt="ProvenIQ Clinical Intelligence Dashboard — Treatment recommendations, lab trends, safety monitoring, and patient chart summaries"
-                width={1200}
-                height={700}
+                src="/images/hero-photo.png"
+                alt="Healthcare provider using ProvenIQ clinical intelligence platform to review patient treatment analytics"
+                width={1792}
+                height={1024}
                 className="w-full h-auto"
                 priority
               />
@@ -315,6 +315,39 @@ export default function Home() {
                   received and their actual outcomes. Clinical evidence from your
                   own data.
                 </p>
+              </div>
+            </div>
+
+            {/* Feature 5 — EHR Sidebar Assistant (full width) */}
+            <div className="mt-8 bg-white rounded-xl p-8 border border-slate-200">
+              <div className="flex flex-col md:flex-row gap-8 items-center">
+                <div className="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center shrink-0">
+                  <svg
+                    className="w-8 h-8 text-teal-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                    EHR Sidebar Assistant
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed">
+                    A browser-based sidebar that works right alongside your
+                    electronic health record. No tab switching, no separate
+                    login. Open any patient chart in your EHR and get instant
+                    access to treatment recommendations, chart summaries, and
+                    clinical intelligence — in context, at the point of care.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
