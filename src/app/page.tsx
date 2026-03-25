@@ -72,7 +72,7 @@ export default function Home() {
               priority
             />
             {/* Overlay gradient so text is readable */}
-            <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/75 to-white/95" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/80 to-white/40" />
           </div>
 
           {/* Text content on top */}
